@@ -42,7 +42,7 @@ document.title="TextUtil-LightMode";}
   }
   return (<>
 <Navbar title="Text" mode={mode} toggleMode={toggleMode}/>
-<div className='container my-3' ></div>
+
 <Alert alert={alert}/>
 <div className='container my-3' ></div>
 <Routes>
@@ -54,13 +54,12 @@ element={
 showAlert={showAlert}
 mode={mode}/>}
 />
-</Routes>
-<Routes>
   <Route
   path='about'
-  element={<About/>}
+  element={<About mode={mode}/>}
   />
 </Routes>
+
 </> );
 
 }
